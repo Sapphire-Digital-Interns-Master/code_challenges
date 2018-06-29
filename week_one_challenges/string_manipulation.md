@@ -31,8 +31,7 @@ Programmatically manipulate `iverson_rant` to reflect the output above.
 ## Green Eggs and Ham
 
 ```ruby
-sam_i_am = "I am Sam\nSam I am\nThat Sam-I-am!\nThat Sam-I-am!\nI do not like that Sam-I-am!\nDo you like
-green eggs and ham?\nI do not like them, Sam-I-am.\nI do not like\ngreen eggs and ham."
+sam_i_am = "I am Sam\nSam I am\nThat Sam-I-am!\nThat Sam-I-am!\nI do not like that Sam-I-am!\nDo you like green eggs and ham?\nI do not like them, Sam-I-am.\nI do not like\ngreen eggs and ham."
 ```
 
 Programmatically do the following to the `sam_i_am` variable:
