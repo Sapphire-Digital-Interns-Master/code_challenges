@@ -1,6 +1,6 @@
 # The Basics
 
-Answer the questions below.
+Answer the questions below. Feel free to use this [markdown cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) to help with formatting!
 
 ## Question 1
 
@@ -154,6 +154,5 @@ end
 
 **Answer 12:**
 ```ruby
-# write your code below
-
+# write your code here
 ```
