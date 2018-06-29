@@ -6,3 +6,4 @@ Complete the challenges in the following order:
 2. `the_basics.md`
 3. `conditionals.md`
 4. `string_manipulation.md`
+5. `methods.md`
