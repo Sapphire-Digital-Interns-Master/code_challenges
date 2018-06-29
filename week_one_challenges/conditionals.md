@@ -6,7 +6,7 @@ Chartreuse is my favorite color. Magenta is my second favorite. Periwinkle is my
 * In Ruby, write a conditional that will check a variable set to a color and tell me how I feel about it.
 
 ```ruby
-var color = "Magenta";
+color = "Magenta"
 
 # write your code here
 ```
