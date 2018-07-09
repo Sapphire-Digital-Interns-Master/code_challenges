@@ -13,6 +13,7 @@ a = b
 At the end of this program, what are the values of a and b? Try to explain, in plain English, how you got your answer for each one.
 
 **Answer 1:**
+a = 4 and b = 4 because with the last line of command we set the variable a equal to b which is 4.
 
 ## Question 2
 
@@ -27,6 +28,7 @@ e = 3
 At the end of this program, what are the values of e, f, and g? Try to explain, in plain English, how you got your answer for each one.
 
 **Answer 2:**
+e = 3, f = 9, g = 12 because 9 + 3 is 12. Therefore, g = 12. "f == g" checks if the statement is true but does not change the value.
 
 
 ## Question 3
@@ -39,7 +41,7 @@ weather == "cloudy"
 What is the difference between these two statements? Explain your answer.
 
 **Answer 3:**
-
+"weather = "cloudy"" sets the weather as cloudy whereas "weather == "cloudy"" only checks if it is true.
 
 ## Question 4
 
@@ -58,6 +60,8 @@ Imagine that you take the code from this question, save it to a file called `sus
 What would be the output? Explain your answer.
 
 **Answer 4:**
+"sushi is delicious" because the x in this case equals to 2 but the conditional statement checks if x is equal to 3 and if it's not equal to 3 but greater than 0 it will simply deliver the message under elseif.
+
 
 
 ## Question 5
@@ -75,7 +79,7 @@ Imagine that you take the code from this question, save it to a file called `sna
 What would be the output? Explain your answer.
 
 **Answer 5:**
-
+"I'm allergic" because our condition matches our string. 
 
 ## Question 6
 
@@ -86,7 +90,7 @@ What would be the output? Explain your answer.
 What would happen here and why? How should I change this code to get an output of 14?
 
 **Answer 6:**
-
+It will cause an error because we have to decide whether we want string or integers. To get an output of 14 we will need to change the 14 from being a string to a number.
 
 ## Question 7
 
@@ -97,7 +101,7 @@ What would happen here and why? How should I change this code to get an output o
 What is the index value of "Michelangelo"?
 
 **Answer 7:**
-
+2 
 
 ## Questions 8
 
@@ -109,14 +113,14 @@ What is the index value of "Michelangelo"?
 
 **Answer 8A:**
 ```ruby
-# write your code here
+	puts jurassic_park["triceratops"]
 ```
 
 * In Ruby, write code to add "Dr. Satler" to the "Humans" of `jurassic_park`.
 
 **Answer 8B:**
 ```ruby
-# write your code here
+	
 ```
 
 ## Question 9
