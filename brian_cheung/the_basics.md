@@ -114,15 +114,14 @@ the index value of Michelangelo would be 2 because an array starts from 0 not 1
 
 **Answer 8A:**
 ```ruby
-# write your code here
-```
 puts jurassic_park{"Triceratops"}
+```
 
 * In Ruby, write code to add "Dr. Satler" to the "Humans" of `jurassic_park`.
 
 **Answer 8B:**
 ```ruby
-# write your code here
+jurassic_park{"Humans"}.push"Dr. Satler"
 ```
 
 ## Question 9
@@ -140,7 +139,14 @@ end
 
 * Examine the above code and imagine that you run it.
 * What do you expect the outcome will be? Explain your answer.
-
+the output would output
+"
+Leonardo
+Raphael
+Michelangelo
+Donatello
+"
+it starts from 0 and logs the ouput in the terminal and will cycle while x < 4 and the last one will be Donatello and terminate
 **Asnwer 9:**
 
 ## Question 11
@@ -150,8 +156,10 @@ end
 **Answer 11:**
 ```ruby
 def names
-  # write your code in here
+	names = ["season", "brian"]
 end
+
+	puts names
 ```
 
 ## Question 12
@@ -160,5 +168,9 @@ end
 
 **Answer 12:**
 ```ruby
-# write your code here
+def Caps(string)
+	puts "#{string}".upcase
+end
+
+
 ```
