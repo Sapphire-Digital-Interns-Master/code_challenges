@@ -120,7 +120,7 @@ What is the index value of "Michelangelo"?
 
 **Answer 8B:**
 ```ruby
-	
+  jurassic_park["Humans"].push("Dr.Satler")
 ```
 
 ## Question 9
@@ -140,6 +140,7 @@ end
 * What do you expect the outcome will be? Explain your answer.
 
 **Asnwer 9:**
+It will display all of the names because it will keep on returning names until it reaches x = 4.
 
 ## Question 11
 
@@ -148,8 +149,10 @@ end
 **Answer 11:**
 ```ruby
 def names
-  # write your code in here
+  ["Season", "Brian"]
 end
+
+puts names
 ```
 
 ## Question 12
@@ -158,5 +161,10 @@ end
 
 **Answer 12:**
 ```ruby
-# write your code here
+  def caps(string)
+    puts "#{string}".upcase
+
+  end
+
+  caps('hi')
 ```
