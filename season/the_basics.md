@@ -41,7 +41,7 @@ weather == "cloudy"
 What is the difference between these two statements? Explain your answer.
 
 **Answer 3:**
-"weather = "cloudy"" sets the weather as cloudy whereas "weather == "cloudy"" only checks if it is true.
+'weather = "cloudy"' sets the weather as cloudy whereas "weather == "cloudy"" only checks if the weather is cloudy and returns a boolean.
 
 ## Question 4
 
@@ -113,7 +113,7 @@ What is the index value of "Michelangelo"?
 
 **Answer 8A:**
 ```ruby
-	puts jurassic_park["triceratops"]
+	puts jurassic_park["Triceratops"]
 ```
 
 * In Ruby, write code to add "Dr. Satler" to the "Humans" of `jurassic_park`.
