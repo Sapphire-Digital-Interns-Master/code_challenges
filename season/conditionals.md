@@ -8,15 +8,20 @@ Chartreuse is my favorite color. Magenta is my second favorite. Periwinkle is my
 ```ruby
 color = "Magenta"
 
-# write your code here
+if color == "Magenta"
+	puts "#{color} is my favorite color."
+end 
 ```
 
 Now, turn your color conditional into a method called `color_checker` that takes any color as an argument.
 
 ```ruby
 def color_checker(color)
-  # write your code here
+   "#{color}"
 end
+
+puts color_checker("BLACK")
+
 ```
 
 ## Conditioner Conditional
@@ -27,7 +32,22 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
   - If the air conditioner is non-functional and the current temperature is below the the desired temperature, print the string "Fix the A/C whenever you have the chance. It's cool."
 
 ```ruby
-# write your code here
+def temperature_status(currentTemperature, functioning, desiredTemperature)
+	if (currentTemperature > desiredTemperature) && (functioning == true)
+		puts "Turn on the A/C, please"
+	elsif (functioning == false) && (currentTemperature > desiredTemperature)
+		puts "Fix the A/C now"
+	elsif (functioning == false) && (currentTemperature < desiredTemperature)
+		puts "Fix the A/C whenever you have the chance. It's cool."
+	else 
+		puts "WE DONT CARE"
+	end
+
+end
+
+
+
+
 ```
 
 ## Palindrome Checker
@@ -35,5 +55,14 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 Create a Ruby method that takes a word or phrase and checks whether or not it's a palindrome (reads the same backward as forward).
 
 ```ruby
-# write your code here
+def palindrome(word)
+	if word == word.reverse
+		puts "It is a palindrome"
+	else 
+		puts "It is not a palindrome"
+	end
+end
+
+ palindrome("pop")
+
 ```
