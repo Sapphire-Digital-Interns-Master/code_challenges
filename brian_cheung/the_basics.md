@@ -114,14 +114,14 @@ the index value of Michelangelo would be 2 because an array starts from 0 not 1
 
 **Answer 8A:**
 ```ruby
-puts jurassic_park{"Triceratops"}
+puts jurassic_park["Triceratops"]
 ```
 
 * In Ruby, write code to add "Dr. Satler" to the "Humans" of `jurassic_park`.
 
 **Answer 8B:**
 ```ruby
-jurassic_park{"Humans"}.push"Dr. Satler"
+jurassic_park["Humans"].push"Dr. Satler"
 ```
 
 ## Question 9
@@ -169,8 +169,7 @@ end
 **Answer 12:**
 ```ruby
 def Caps(string)
-	puts "#{string}".upcase
+	puts string.upcase
 end
-
-
 ```
+**call the method by typing 'Caps(<string value here>)'
