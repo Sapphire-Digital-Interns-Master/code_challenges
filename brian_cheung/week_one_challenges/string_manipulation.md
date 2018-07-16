@@ -37,14 +37,6 @@ def practice_counter(phrase)
 end
 ```
 
-def practice_counter(phrase)
-  counter = 0
-  no_punctuation = "#{phrase}".gsub(/[,.?!]/, "")
-  wordarray = no_punctuation.split
-  counter = wordarray.count("practice")
-  puts counter
-end
-
 ## Green Eggs and Ham
 
 ```ruby
