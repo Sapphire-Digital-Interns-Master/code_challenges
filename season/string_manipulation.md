@@ -1,6 +1,6 @@
 # String Manipulation
 
-## Allen Iverson
+## Allen Allen_Iverson_Practice
 
 In 2002, Allen Iverson told reporters how he felt about practice, famously using the word 'practice' over 20 times. Let's use code to pick apart his rant. It's pretty long. Wouldn't it be nice if we could ***split*** his rant up by individual words and ***iterate*** through each word to manipulate his rant? That'd be sweet. Then maybe we could ***join*** his rant back together afterwards, or something.
 
@@ -19,7 +19,15 @@ iverson_rant = "If I can't practice, I can't practice, man. If I'm hurt, I'm hur
 Programmatically manipulate `iverson_rant` to reflect the output above.
 
 ```ruby
-# write your code here
+  wordsarray = iverson_rant.split
+  first_letters_array = []
+
+  wordsarray.map do |word|
+    first_letters_array.push(word.chr)
+  end 
+
+  puts first_letters_array.join 
+
 ```
 
 2. Programmatically find out exactly how many times Iverson used the word 'practice' in his rant.
