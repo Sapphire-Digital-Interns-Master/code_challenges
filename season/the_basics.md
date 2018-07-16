@@ -162,9 +162,13 @@ puts names
 **Answer 12:**
 ```ruby
   def caps(string)
-    puts "#{string}".upcase
-
+    puts string.upcase
   end
 
   caps('hi')
+
+
+
+
+
 ```
