@@ -68,15 +68,12 @@ palindrome("pop")
 
 ```ruby
 def palindrome(word)
-
 	if check(word) 
 		puts "Anything"
 	else 
 		puts "nothing"
 	end
-
 end
-
 
 def flip(string)
 	string.reverse
@@ -84,7 +81,6 @@ end
 
 def check(string)
 	flip(string) == string
-
 end
 
 ```
