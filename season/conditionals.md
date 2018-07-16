@@ -32,17 +32,16 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
   - If the air conditioner is non-functional and the current temperature is below the the desired temperature, print the string "Fix the A/C whenever you have the chance. It's cool."
 
 ```ruby
-def temperature_status(currentTemperature, functioning, desiredTemperature)
-	if (currentTemperature > desiredTemperature) && (functioning == true)
+def temperature_status(current_temperature, functioning, desired_temperature)
+	if  (functioning == true) && (current_temperature > desired_temperature)
 		puts "Turn on the A/C, please"
-	elsif (functioning == false) && (currentTemperature > desiredTemperature)
+	elsif (functioning == false) && (current_temperature > desired_temperature)
 		puts "Fix the A/C now"
-	elsif (functioning == false) && (currentTemperature < desiredTemperature)
+	elsif (functioning == false) && (current_temperature < desired_temperature)
 		puts "Fix the A/C whenever you have the chance. It's cool."
 	else 
 		puts "WE DONT CARE"
 	end
-
 end
 
 
@@ -51,7 +50,7 @@ end
 ```
 
 ## Palindrome Checker
-
+ 
 Create a Ruby method that takes a word or phrase and checks whether or not it's a palindrome (reads the same backward as forward).
 
 ```ruby
@@ -62,7 +61,33 @@ def palindrome(word)
 		puts "It is not a palindrome"
 	end
 end
-
- palindrome("pop")
+palindrome("pop")
 
 ```
+
+
+```ruby
+def palindrome(word)
+
+	if check(word) 
+		puts "Anything"
+	else 
+		puts "nothing"
+	end
+
+end
+
+
+def flip(string)
+	string.reverse
+end
+
+def check(string)
+	flip(string) == string
+
+end
+
+```
+
+
+
