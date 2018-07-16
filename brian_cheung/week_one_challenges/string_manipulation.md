@@ -19,28 +19,32 @@ iverson_rant = "If I can't practice, I can't practice, man. If I'm hurt, I'm hur
 Programmatically manipulate `iverson_rant` to reflect the output above.
 
 ```ruby
-def simplify (phrase)
-  abbr = nil
-  wordarray = phrase.split
-    wordarray.each do |word|
-      addabbr = "#{word}".chr
-      abbr = "#{abbr}#{addabbr}"
+def simplify(phrase)
+  abbreviation = nil
+  word_array = phrase.split
+    word_array.each do |word|
+      abbreviation = "#{abbreviation}#{word.chr}"
     end
-  puts "#{abbr}"
+  puts abbreviation
 end
 ```
 
 2. Programmatically find out exactly how many times Iverson used the word 'practice' in his rant.
 
 ```ruby
-def practice_counter (phrase)
-  count = 0
-  no_punctuation = "#{phrase}".gsub(/[,.?!]/, "")
-  wordarray = no_punctuation.split
-  count = wordarray.count("practice")
-  puts "#{count}"
+def practice_counter(phrase)
+  counter = 0
+  puts "#{phrase}".gsub(/[,.?!]/, "").split.count("practice")
 end
 ```
+
+def practice_counter(phrase)
+  counter = 0
+  no_punctuation = "#{phrase}".gsub(/[,.?!]/, "")
+  wordarray = no_punctuation.split
+  counter = wordarray.count("practice")
+  puts counter
+end
 
 ## Green Eggs and Ham
 
@@ -58,7 +62,7 @@ Programmatically do the following to the `sam_i_am` variable:
 Hint: You can chain substitutions!
 
 ```ruby
-def word_switching (phrase)
+def word_switching(phrase)
   puts "#{phrase}".gsub(" ", "_").gsub("\n", "*").gsub("Sam", "Brian").gsub("o", "0").gsub("green", "blue")
 end
 ```
