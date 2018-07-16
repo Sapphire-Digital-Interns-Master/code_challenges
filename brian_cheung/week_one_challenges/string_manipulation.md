@@ -33,7 +33,6 @@ end
 
 ```ruby
 def practice_counter(phrase)
-  counter = 0
   puts "#{phrase}".gsub(/[,.?!]/, "").split.count("practice")
 end
 ```
