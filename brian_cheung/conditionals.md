@@ -38,14 +38,14 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 
 ```ruby
 def temperature_status(current_temp, functioning, desired_temperature)
-	if (current_temp > desired_temperature) && functioning == true
-		puts "Turn on the A/X please."
-	elsif (current_temp > desired_temperature) && functioning == false
+	if functioning == true && (current_temp > desired_temperature)
+		puts "Turn on the A/C please."
+	elsif functioning == false && (current_temp > desired_temperature)
 		puts "Fix the A/C now! It's hot!"
-	elsif (current_temp < desired_temperature) && functioning == false
+	elsif functioning == false && (current_temp < desired_temperature)
 		puts "Fix the A/C whenever you have the chance. It's cool."
 	else
-		puts "You have run into an error or there are no reponse available"
+		puts "You have run into an error or there are no response available"
 	end
 end
 ```
@@ -55,7 +55,7 @@ end
 Create a Ruby method that takes a word or phrase and checks whether or not it's a palindrome (reads the same backward as forward).
 
 ```ruby
-def palindromeTest(phrase)
+def palindrome_test(phrase)
 	 if phrase == phrase.reverse
 	 	puts "#{phrase} is a palindrome"
 	 else
