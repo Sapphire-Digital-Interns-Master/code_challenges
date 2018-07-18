@@ -19,10 +19,10 @@ iverson_rant = "If I can't practice, I can't practice, man. If I'm hurt, I'm hur
 Programmatically manipulate `iverson_rant` to reflect the output above.
 
 ```ruby
-  wordsarray = iverson_rant.split
+  words_array = iverson_rant.split
   first_letters_array = []
 
-  wordsarray.map do |word|
+  words_array.each do |word|
     first_letters_array.push(word.chr)
   end 
 
