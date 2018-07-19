@@ -70,3 +70,4 @@ def wu_marathon(discography)
   end
   puts "It will take #{current_time} minutes to listen to the Wu Tang discography"
 end
+
