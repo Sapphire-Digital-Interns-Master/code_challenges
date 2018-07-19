@@ -45,18 +45,46 @@ Method Man wants to dive into the Wu-Tang catalog and extract some sweet informa
 ## Warm Up!
 
 - Write code to programmatically print "Protect Ya Neck" to the screen.
+      -  wu_tang[0][:singles][0]
 - Write code to programmatically print the word "RCA" to the screen.
+      - wu_tang[1][:label]
 - Write code to programmatically print "Iron Flag" to the screen.
+      - wu_tang[3][:title]
 - Change the label for "Wu-Tang Forever" to "Sony".
+      -  wu_tang[1][:label] = "Sony"
 - Add the single "Out of the Woods" to the album "Eight Diagrams"
+      - wu_tang[4][:singles].push("Out of the Woods")
 
 ## Real Deal
 
 1. Write a method, `single_sampler`, that takes a Wu-Tang album hash and prints out the names of all the singles.
+  - 
+```ruby 
+def single_sampler(album)
+  puts album[:singles]
+end
+
+single_sampler(wu_tang[0])
+```  
 
 2. Write a method, `single_counter`, that returns the number of singles for a given Wu-Tang album.
+```ruby 
+def single_counter(album)
+  puts album[:singles].count
+end
+
+single_counter(wu_tang[0])
+
+```
 
 3. Write a method, `album length`, that returns an album's play time.
+```ruby 
+def album_length(album)
+  puts album[:length]
+end
+
+album_length(wu_tang[0])
+```
 
 4. Write a method, `singlegram`, that returns a hash of the single count for the Wu-Tang discography, like so:
 
@@ -66,5 +94,25 @@ Method Man wants to dive into the Wu-Tang catalog and extract some sweet informa
     "Wu-Tang Forever" => 3,
   }
 ```
+```ruby  
 
-5. Write a method, `wu-marathon`, that returns the total playtime of all the Wu-Tang albums combined.
+def singlegram(singer)
+  title_array = singer.map { |title_string| title_string[:title] }
+  singles_array = singer.map { |singles_string| singles_string[:singles].count } 
+  Hash[title_array.zip(singles_array)]
+end
+
+singlegram(wu_tang)
+```
+
+
+5.  Write a method, `wu-marathon`, that returns the total playtime of all the Wu-Tang albums combined.
+
+```ruby
+def wu_marathon(singer)
+  playtime_array = singer.map { |length_string| length_string[:length].to_i }
+  puts playtime_array.reduce(:+)
+end
+wu_marathon(wu_tang)
+
+```
