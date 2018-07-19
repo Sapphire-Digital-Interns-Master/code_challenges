@@ -45,22 +45,19 @@ When `fizz_buzz(max_number)` is executed, it should do the following for every n
 * If a number is divisible by both 3 and 5, it should log "FizzBuzz".
 * Otherwise, it should just log the number.
 ```ruby
-def fiz_buzz(max_number)
+def fizz_buzz(max_number)
   i = 0
   while i <= max_number
     if (i % 5 == 0) && (i % 3 == 0)
       puts "FizzBuzz"
-      i += 1
     elsif i % 3 == 0
       puts "Fizz"
-      i += 1
     elsif i % 5 == 0
       puts "Buzz"
-      i += 1
     else
       puts i
-      i += 1
     end
+    i += 1
   end
 end
 ```
@@ -71,7 +68,7 @@ end
 
 ```ruby
 def big_backwards(word)
-  puts "#{word.upcase.reverse}"
+  puts word.upcase.reverse
 end
 ```
 
@@ -83,7 +80,7 @@ Example output:
 ```
 ```ruby
 def informed_counter (word)
-  puts word.split('').count
+  puts "The word #{word} has #{word.split('').count} letters!"
 end
 ```
 
@@ -97,15 +94,15 @@ big_ordered_array(test_array)
 ```
 ```ruby
 def big_ordered_array (array)
-  puts array.map {|word| word.upcase }.sort_by { |word| word.length }.group_by(&:length).map{ |itterate, array| array.sort}.flatten
+  puts array.map {|word| word.upcase }.sort_by { |word| word.length }.group_by(&:length).map{ |iterate, array| array.sort}.flatten
 end
 ```
 
 4. Declare a method called `lucky_number` that takes two numbers as arguments and returns "Unlucky!" if the sum of those numbers is divisible by 13, and "Lucky!" if not.
 
 ```ruby
-def lucky_number (number)
-  if number % 13
+def lucky_number (number1, number2)
+  if (number1 + number2) % 13 == 0
     puts "Unlucky!"
   else
     puts "Lucky!"
