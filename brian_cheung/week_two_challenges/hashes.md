@@ -11,36 +11,44 @@ Manually create a hash with the following keys/values:
 | 'Myers'  | ['Austin Powers', 'Shrek']|
 | 'fruit' | 'banana' |
 
+```ruby
+Movies = {
+  'Hitchcock' => ['Rear Window'],
+  'Truffaut' => ['400 Blows'],
+  'Myers' => ['Austin Powers', 'Shrek'],
+  'fruit' => 'banana'
+}
+```
 Programmatically do the following:
 
 1. `fruit` and `banana` aren't movies! Delete them from the hash.
 
 ```ruby
-# write your code here
+Movies.delete("fruit")
 ```
 
 2. Add "The Birds" to the `Hitchcock` array.
 
 ```ruby
-# write your code here
+Movies["Hitchcock"].push("The Birds")
 ```
 
 3. Remove `Shrek`.
 
 ```ruby
-# write your code here
+Movies["Myers"].delete("Shrek")
 ```
 
 4. Return all of the keys.
 
 ```ruby
-# write your code here
+Movies.keys
 ```
 
 5. Return all the values.
 
 ```ruby
-# write your code here
+Movies.values
 ```
 
 ## Quit Putin Me On
@@ -57,25 +65,25 @@ Programmatically do the following:
 1. Return the string `"Riding ponies"`
 
 ```ruby
-# write your code here
+putins_brain[:fav_hobby]
 ```
 
 2. Return the string `"a5Mjp257GHMGH23e5qxE"`
 
 ```ruby
-# write your code here
+putins_brain[:launch_code]
 ```
 
-3. Add the key-value pair `obsessiveCrush: "Condoleezza Rice"`
+3. Add the key-value pair `obsessive_crush: "Condoleezza Rice"`
 
 ```ruby
-# write your code here
-```
+putins_brain[:obsessive_crush] = "Condoleezza Rice"
+  ```
 
 4. Add the key-value pair `torture_count: 931`
 
 ```ruby
-# write your code here
+putins_brain[:torture_count] = 931 
 ```
 
 ## The Most Ridiculous Grocery List
@@ -91,58 +99,70 @@ groceries = {
   steak: "meaty",
 }
 ```
+```ruby
+groceries = {
+  avocados: "fresh",
+  steak: "meaty",
+  grass: "fiber-filled",
+  whiskey: "smooth",
+  muffins: "sweet",
+  fish: "mercury-tastic",
+  soap: "disgusting"
+}
+```
+
 Programmatically do the following:
 
 1. Avocados are full of that good fat. Change the avocado value to be "fatty".
 
 ```ruby
-# write your code here
+groceries[:avocados] = "fatty"
 ```
 
 2. Muffins are super unhealthy. Change the value for muffins to be "carbtastic".
 
 ```ruby
-# write your code here
+groceries[:muffins] = "carbastic"
 ```
 
 3. Soap? Who would eat soap? Delete that from your hash.
 
 ```ruby
-# write your code here
+groceries.delete(:soap)
 ```
 
 4. The fish went bad. The flavor of fish should be "rotten".
 
 ```ruby
-# write your code here
+groceries[:fish] = "rotten"
 ```
 
 5. Juice cleanse! Add "raw carrot juice" to your hash with the flavor "wallet-draining good".
 
 ```ruby
-# write your code here
+groceries["raw carrot juice"] = "wallet-draining good"
 ```
 
 6. Atkins diet! Get those muffins out of that hash.
 
 ```ruby
-# write your code here
+groceries.delete(:muffins)
 ```
 
 7. Time to dry yourself out. Delete whiskey from the hash.
 
 ```ruby
-# write your code here
+groceries.delete(:whiskey)
 ```
 
 8. You just moved to Park Slope and joined the co-op! Add "gluten free bread" to your hash with the flavor "sadness".
 
 ```ruby
-# write your code here
+groceries["gluten free bread"] = "sadness"
 ```
 
 9. Time to fast. Delete everything from the hash!
 
 ```ruby
-# write your code here
+groceries.clear
 ```
