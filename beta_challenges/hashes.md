@@ -66,7 +66,7 @@ Programmatically do the following:
 # write your code here
 ```
 
-3. Add the key-value pair `obsessiveCrush: "Condoleezza Rice"`
+3. Add the key-value pair `obsessive_crush: "Condoleezza Rice"`
 
 ```ruby
 # write your code here
