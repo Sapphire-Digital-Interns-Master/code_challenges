@@ -19,13 +19,13 @@ kanyeRecords = [
 1. Print the name of every Kanye record.
 
 ```ruby
-kanyeRecords.each do |hash_iterate| puts hash_iterate[:title] end
+kanyeRecords.each { |hash_iterate| puts hash_iterate[:title] }
 ```
 
 2. Print the year every Kanye record was released.
 
 ```ruby
-kanyeRecords.each do |hash_iterate| puts hash_iterate[:year] end
+kanyeRecords.each { |hash_iterate| puts hash_iterate[:year] }
 ```
 
 3. Look into the future and add a forthcoming Kanye record into our array. It should be released in 2021 and have a title that is completely asinine.
@@ -47,17 +47,13 @@ end
 5. Iterate through the collection. For each record, print out a sentence detailing each record (e.g. "'Graduation' was released in 2007.").
 
 ```ruby
-kanyeRecords.each do |i|
-  puts "'#{i[:title]} was released in #{i[:year]}"
-end
+kanyeRecords.each { |i| puts "'#{i[:title]} was released in #{i[:year]}" }
 ```
 
 6. Iterate through collection. add a key value pair to each record with the key as `label` and the value as `"def jam"`.
 
 ```ruby
-kanyeRecords.each do |i|
-  i['label'] = "def jam"
-end
+kanyeRecords.each { |i| i[:label] = "def jam" }
 ```
 
 ***BONUS***
@@ -67,9 +63,9 @@ end
 ```ruby
 kanyeRecords.each do |i|
   if i[:title].length >= 15
-    puts "'#{:title}' That's a long title"
+    puts "'#{i[:title]}' That's a long title"
   else
-    puts "'#{:title}' That's a short title"
+    puts "'#{i[:title]}' That's a short title"
   end
 end
 ```
