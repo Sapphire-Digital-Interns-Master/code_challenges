@@ -13,3 +13,21 @@ require 'httparty'
 # E 47 St & 2 Ave (22 bikes available)
 # W 18 St & 6 Ave (16 bikes available)
 # Broadway & W 49 St (4 bikes available)
+
+data = HTTParty.get("https://feeds.citibikenyc.com/stations/stations.json")
+
+station_data = data["stationBeanList"]
+
+acceptable_stations = []
+
+station_data.each do |station|
+  if station["totalDocks"] > 40 && station["availableBikes"] > 5
+    acceptable_stations << station
+  end
+end
+
+sorted_acceptable_stations = acceptable_stations.sort_by {|station_order| station_order["availableBikes"]}.reverse
+
+sorted_acceptable_stations.each do |allowed_station|
+  puts "#{allowed_station["stationName"]} (#{allowed_station["availableBikes"]} bikes available)"
+  end
