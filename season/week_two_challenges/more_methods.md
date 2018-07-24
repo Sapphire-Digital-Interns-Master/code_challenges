@@ -12,7 +12,7 @@ character_house("Tyrion", "Lannister")
 # output => "Tyrion, house of Lannister."
 ```
 ```ruby
-def character_house(first_name,house_name)
+def character_house(first_name, house_name)
  puts "#{first_name}, house of  #{house_name}"
 end
 character_house("Tyrion", "Lannister")
@@ -27,7 +27,7 @@ Create a method called `triangle_checker`.
 * If those three numbers do not add up to 180, then return `false`.
 
 ```ruby
-def triangle_checker(no1,no2,no3)
+def triangle_checker(no1, no2, no3)
   if no1 + no2 + no3 == 180 
     return true 
   else
@@ -47,8 +47,8 @@ When `fizz_buzz(max_number)` is executed, it should do the following for every n
 * If a number is divisible by both 3 and 5, it should log "FizzBuzz".
 * Otherwise, it should just log the number.
 ```ruby
-def fizz_buzz(number)
-  for i in 0..(number) do 
+def fizz_buzz(max_number)
+  for i in 0..(max_number) do 
     if i % 5 == 0 and i % 3 == 0
       puts "FizzBuzz"    
     elsif i % 3 == 0 
@@ -56,7 +56,7 @@ def fizz_buzz(number)
     elsif i % 5 == 0 
       puts "Buzz"
     else 
-      puts number
+      puts i
     end
   end
 end
@@ -106,7 +106,7 @@ big_ordered_array(actual_array)
 4. Declare a method called `lucky_number` that takes two numbers as arguments and returns "Unlucky!" if the sum of those numbers is divisible by 13, and "Lucky!" if not.
 
 ```ruby
-def lucky_number(no1,no2)
+def lucky_number(no1, no2)
   if (no1 + no2) % 13 == 0 
     puts "Unlucky!"
   else 
