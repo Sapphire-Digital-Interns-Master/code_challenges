@@ -94,9 +94,15 @@ big_ordered_array(test_array)
 ```
 ```ruby
 def big_ordered_array (array)
-  puts array.map {|word| word.upcase }.sort_by { |word| word.length }.group_by(&:length).map{ |iterate, array| array.sort}.flatten
+   puts array.map {|word| word.upcase }.sort.sort_by { |word| word.length }
 end
 ```
+
+#old code for refrence
+#
+#def big_ordered_array (array)
+#  puts array.map {|word| word.upcase }.sort_by { |word| word.length }.group_by(&:length).map{ |iterate, array| #array.sort}.flatten
+#end
 
 4. Declare a method called `lucky_number` that takes two numbers as arguments and returns "Unlucky!" if the sum of those numbers is divisible by 13, and "Lucky!" if not.
 
