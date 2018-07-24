@@ -112,5 +112,6 @@ def lucky_number (number1, number2)
     puts "Unlucky!"
   else
     puts "Lucky!"
+  end
 end
 ```
