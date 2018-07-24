@@ -19,13 +19,13 @@ kanyeRecords = [
 1. Print the name of every Kanye record.
 
 ```ruby
-kanyeRecords.each { |hash_iterate| puts hash_iterate[:title] }
+kanyeRecords.each { |each_kanyeRecords_hash| puts each_kanyeRecords_hash[:title] }
 ```
 
 2. Print the year every Kanye record was released.
 
 ```ruby
-kanyeRecords.each { |hash_iterate| puts hash_iterate[:year] }
+kanyeRecords.each { |each_kanyeRecords_hash| puts each_kanyeRecords_hash[:year] }
 ```
 
 3. Look into the future and add a forthcoming Kanye record into our array. It should be released in 2021 and have a title that is completely asinine.
@@ -37,9 +37,9 @@ kanyeRecords << {year: 2021, title: "Tis the Season to dress it salty"}
 4. Iterate through Kanye's record collection and print out the titles of all the records released after Kanye's ego exploded (this happened in 2007).
 
 ```ruby
-kanyeRecords.each do |i|
-  if i[:year] >= 2007
-    puts i[:title]
+kanyeRecords.each do |each_kanyeRecords_hash|
+  if each_kanyeRecords_hash[:year] >= 2007
+    puts each_kanyeRecords_hash[:title]
   end
 end
 ```
@@ -47,13 +47,13 @@ end
 5. Iterate through the collection. For each record, print out a sentence detailing each record (e.g. "'Graduation' was released in 2007.").
 
 ```ruby
-kanyeRecords.each { |i| puts "'#{i[:title]} was released in #{i[:year]}" }
+kanyeRecords.each { |each_kanyeRecords_hash| puts "'#{each_kanyeRecords_hash[:title]} was released in #{each_kanyeRecords_hash[:year]}" }
 ```
 
 6. Iterate through collection. add a key value pair to each record with the key as `label` and the value as `"def jam"`.
 
 ```ruby
-kanyeRecords.each { |i| i[:label] = "def jam" }
+kanyeRecords.each { |each_kanyeRecords_hash| each_kanyeRecords_hash[:label] = "def jam" }
 ```
 
 ***BONUS***
@@ -61,11 +61,11 @@ kanyeRecords.each { |i| i[:label] = "def jam" }
 1. Iterate through the collection. If a record's title contains more than 15 letters, print `"That's a long title."`
 
 ```ruby
-kanyeRecords.each do |i|
-  if i[:title].length >= 15
-    puts "'#{i[:title]}' That's a long title"
+kanyeRecords.each do |each_kanyeRecords_hash|
+  if each_kanyeRecords_hash[:title].length >= 15
+    puts "'#{each_kanyeRecords_hash[:title]}' That's a long title"
   else
-    puts "'#{i[:title]}' That's a short title"
+    puts "'#{each_kanyeRecords_hash[:title]}' That's a short title"
   end
 end
 ```
@@ -73,7 +73,7 @@ end
 2. Iterate through the collection. Replace the letter 'o' in each record title with the number 0.
 
 ```ruby
-kanyeRecords.each do |i|
-  i[:title] = i[:title].gsub('o', '0')
+kanyeRecords.each do |each_kanyeRecords_hash|
+  each_kanyeRecords_hash[:title] = each_kanyeRecords_hash[:title].gsub('o', '0')
 end
 ```
