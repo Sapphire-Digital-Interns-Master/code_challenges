@@ -12,7 +12,7 @@ Manually create a hash with the following keys/values:
 | 'fruit' | 'banana' |
 
 ```ruby
-Movies = {
+movies = {
   'Hitchcock' => ['Rear Window'],
   'Truffaut' => ['400 Blows'],
   'Myers' => ['Austin Powers', 'Shrek'],
@@ -24,31 +24,31 @@ Programmatically do the following:
 1. `fruit` and `banana` aren't movies! Delete them from the hash.
 
 ```ruby
-Movies.delete("fruit")
+movies.delete("fruit")
 ```
 
 2. Add "The Birds" to the `Hitchcock` array.
 
 ```ruby
-Movies["Hitchcock"].push("The Birds")
+movies["Hitchcock"].push("The Birds")
 ```
 
 3. Remove `Shrek`.
 
 ```ruby
-Movies["Myers"].delete("Shrek")
+movies["Myers"].delete("Shrek")
 ```
 
 4. Return all of the keys.
 
 ```ruby
-Movies.keys
+movies.keys
 ```
 
 5. Return all the values.
 
 ```ruby
-Movies.values
+movies.values
 ```
 
 ## Quit Putin Me On
@@ -140,7 +140,7 @@ groceries[:fish] = "rotten"
 5. Juice cleanse! Add "raw carrot juice" to your hash with the flavor "wallet-draining good".
 
 ```ruby
-groceries["raw carrot juice"] = "wallet-draining good"
+groceries[:raw_carrot_juice] = "wallet-draining good"
 ```
 
 6. Atkins diet! Get those muffins out of that hash.
@@ -158,7 +158,7 @@ groceries.delete(:whiskey)
 8. You just moved to Park Slope and joined the co-op! Add "gluten free bread" to your hash with the flavor "sadness".
 
 ```ruby
-groceries["gluten free bread"] = "sadness"
+groceries[:gluten_free_bread] = "sadness"
 ```
 
 9. Time to fast. Delete everything from the hash!
