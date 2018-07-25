@@ -30,4 +30,4 @@ sorted_acceptable_stations = acceptable_stations.sort_by {|station_order| statio
 
 sorted_acceptable_stations.each do |allowed_station|
   puts "#{allowed_station["stationName"]} (#{allowed_station["availableBikes"]} bikes available)"
-  end
+end
