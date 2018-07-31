@@ -9,27 +9,27 @@ Manually create a hash with the following keys/values:
 | 'fruit' | 'banana' |
 Programmatically do the following:
 ```ruby 
-random = {:Hitchcock=>["Rear window"], :Truffaut=>["400 blows"], :Myers=>["Austin Powers", "Shrek"], :Fruit=>"Banana"}
+movies = {:Hitchcock=>["Rear window"], :Truffaut=>["400 blows"], :Myers=>["Austin Powers", "Shrek"], :fruit=>"Banana"}
 ```
 1. `fruit` and `banana` aren't movies! Delete them from the hash.
 ```ruby
-random.delete(:Fruit)
+movies.delete(:fruit)
 ```
 2. Add "The Birds" to the `Hitchcock` array.
 ```ruby
-random[:Hitchcock].push("The birds")
+movies[:Hitchcock].push("The birds")
 ```
 3. Remove `Shrek`.
 ```ruby
-random[:Myers].delete("Shrek")
+movies[:Myers].delete("Shrek")
 ```
 4. Return all of the keys.
 ```ruby
-random.keys    
+movies.keys    
 ```
 5. Return all the values.
 ```ruby
-random.values
+movies.values
 ```
 ## Quit Putin Me On
 ```
@@ -50,7 +50,7 @@ putins_brain[:launch_code]
 ```
 3. Add the key-value pair `obsessiveCrush: "Condoleezza Rice"`
 ```ruby
-putins_brain.store(:obsessiveCrush, "Condoleezza Rice")
+putins_brain[obsessiveCrush: "Condoleezza Rice"]
 ```
 4. Add the key-value pair `torture_count: 931`
 ```ruby
