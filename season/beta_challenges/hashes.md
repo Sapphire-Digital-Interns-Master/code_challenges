@@ -9,7 +9,7 @@ Manually create a hash with the following keys/values:
 | 'fruit' | 'banana' |
 Programmatically do the following:
 ```ruby 
-movies = {:Hitchcock=>["Rear window"], :Truffaut=>["400 blows"], :Myers=>["Austin Powers", "Shrek"], :fruit=>"Banana"}
+movies = {:hitchcock=>["Rear window"], :truffaut=>["400 blows"], :myers=>["Austin Powers", "Shrek"], :fruit=>"Banana"}
 ```
 1. `fruit` and `banana` aren't movies! Delete them from the hash.
 ```ruby
@@ -17,11 +17,11 @@ movies.delete(:fruit)
 ```
 2. Add "The Birds" to the `Hitchcock` array.
 ```ruby
-movies[:Hitchcock].push("The birds")
+movies[:hitchcock].push("The birds")
 ```
 3. Remove `Shrek`.
 ```ruby
-movies[:Myers].delete("Shrek")
+movies[:myers].delete("Shrek")
 ```
 4. Return all of the keys.
 ```ruby
@@ -48,9 +48,9 @@ putins_brain[:fav_hobby]
 ```ruby
 putins_brain[:launch_code]
 ```
-3. Add the key-value pair `obsessiveCrush: "Condoleezza Rice"`
+3. Add the key-value pair `obsessive_crush: "Condoleezza Rice"`
 ```ruby
-putins_brain[obsessiveCrush: "Condoleezza Rice"]
+putins_brain[obsessive_crush: "Condoleezza Rice"]
 ```
 4. Add the key-value pair `torture_count: 931`
 ```ruby
