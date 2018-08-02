@@ -50,7 +50,7 @@ putins_brain[:launch_code]
 ```
 3. Add the key-value pair `obsessive_crush: "Condoleezza Rice"`
 ```ruby
-putins_brain[obsessive_crush: "Condoleezza Rice"]
+putins_brain.store(:obsessive_crush, "Condoleezza Rice")
 ```
 4. Add the key-value pair `torture_count: 931`
 ```ruby
