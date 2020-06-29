@@ -14,6 +14,7 @@ At the end of this program, what are the values of a and b? Try to explain, in p
 
 **Answer 1:**
 
+
 ## Question 2
 
 ```ruby
@@ -70,9 +71,7 @@ if food == "walnut"
 end
 ```
 
-Imagine that you take the code from this question, save it to a file called `snack.rb`, and run `ruby snack.rb` in your Terminal.
-
-What would be the output? Explain your answer.
+If you ran this code, what would be the output? Explain your answer.
 
 **Answer 5:**
 

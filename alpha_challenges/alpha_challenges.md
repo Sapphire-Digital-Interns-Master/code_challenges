@@ -1,4 +1,6 @@
-# Week One Challenges
+# Alpha Challenges
+
+Copy the challenges into your named directory *in an alpha_challenges directory.*
 
 Complete the challenges in the following order:
 

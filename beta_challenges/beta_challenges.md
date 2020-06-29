@@ -1,6 +1,6 @@
-# Week Two Challenges
+# Beta Challenges
 
-Copy the challenges into your named directory *in a week_two_challenges directory.*
+Copy the challenges into your named directory *in a beta_challenges directory.*
 
 Complete the challenges in the following order:
 
