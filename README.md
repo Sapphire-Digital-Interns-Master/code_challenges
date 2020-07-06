@@ -1,6 +1,6 @@
 # Code Challenges
 
-Code challenges for the Vitals engineering interns.
+Code challenges for the Sapphire-Digital engineering interns.
 
 ## Getting Started
 
@@ -10,5 +10,5 @@ Code challenges for the Vitals engineering interns.
 * Make a new directory on the top level that's named after you (e.g. `mkdir shania_cox`).
 * Copy the top level `alpha_challenges` directory and move it into your named directory.
 * In your directory, complete the challenges in the order specified in `alpha_challenges.md`.
-* Each time you complete a challenge, add, commit, and push your changes onto your named branch. Reference the [platform survivial guide](https://github.com/mdx-dev/platform-survival-guide/blob/master/pull-requests.md) for information on how to make a great commit message.
+* Each time you complete a challenge, add, commit, and push your changes onto your named branch. Reference the [platform survival guide](https://github.com/mdx-dev/platform-survival-guide/blob/master/pull-requests.md) for information on how to make a great commit message.
 * Make a pull request against the `master` branch.
