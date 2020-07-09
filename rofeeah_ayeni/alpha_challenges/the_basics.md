@@ -48,9 +48,9 @@ The first statement is assigning weather to the value of "cloudy" string. The se
 x = 2
 
 if x == 3
-  puts "sushi is tasty"
+	puts "sushi is tasty"
 elsif x > 0
-  puts "sushi is delicious"
+	puts "sushi is delicious"
 end
 ```
 
@@ -67,7 +67,7 @@ The output would be sushi is delicious because 2 != 3 but, 2>0. Therefore, "sush
 food = "walnut"
 
 if food == "walnut"
-  puts "I'm allergic!"
+	puts "I'm allergic!"
 end
 ```
 
@@ -108,14 +108,14 @@ The value would be 2 because in an array, the value starts from 0 and proceed to
 
 **Answer 8A:**
 ```ruby
-# puts jurassic_park['Triceratops']
+puts jurassic_park['Triceratops']
 ```
 
 * In Ruby, write code to add "Dr. Satler" to the "Humans" of `jurassic_park`.
 
 **Answer 8B:**
 ```ruby
-# puts jurassic_park["Humans"].push('Dr. Satler')
+puts jurassic_park["Humans"].push('Dr. Satler')
 ```
 
 ## Question 9
@@ -125,7 +125,7 @@ x = 0
 
 while x < 4
   turtles = ["Leonardo", "Raphael", "Michelangelo", "Donatello"]
-  puts turtles[x]
+	puts turtles[x]
 
   x = x + 1
 end
@@ -143,7 +143,7 @@ It would spit out all the names in the array. Since it is a while loop set to lo
 **Answer 10:**
 ```ruby
 def names
-  puts ['Rofeeah', 'Shania']
+	puts ['Rofeeah', 'Shania']
 end
 return names
 ```
