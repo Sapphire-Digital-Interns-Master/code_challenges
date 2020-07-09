@@ -48,9 +48,9 @@ The first statement is assigning weather to the value of "cloudy" string. The se
 x = 2
 
 if x == 3
-puts "sushi is tasty"
+  puts "sushi is tasty"
 elsif x > 0
-puts "sushi is delicious"
+  puts "sushi is delicious"
 end
 ```
 
@@ -67,7 +67,7 @@ The output would be sushi is delicious because 2 != 3 but, 2>0. Therefore, "sush
 food = "walnut"
 
 if food == "walnut"
-	puts "I'm allergic!"
+  puts "I'm allergic!"
 end
 ```
 
@@ -125,7 +125,7 @@ x = 0
 
 while x < 4
   turtles = ["Leonardo", "Raphael", "Michelangelo", "Donatello"]
-	puts turtles[x]
+  puts turtles[x]
 
   x = x + 1
 end
@@ -143,7 +143,7 @@ It would spit out all the names in the array. Since it is a while loop set to lo
 **Answer 10:**
 ```ruby
 def names
-	puts ['Rofeeah', 'Shania']
+  puts ['Rofeeah', 'Shania']
 end
 return names
 ```
@@ -155,6 +155,6 @@ return names
 **Answer 11:**
 ```ruby
 def caps(string)
-	puts string.upcase!
+  puts string.upcase!
 end
 ```
