@@ -48,9 +48,9 @@ The first statement is assigning weather to the value of "cloudy" string. The se
 x = 2
 
 if x == 3
-	puts "sushi is tasty"
+puts "sushi is tasty"
 elsif x > 0
-	puts "sushi is delicious"
+puts "sushi is delicious"
 end
 ```
 
