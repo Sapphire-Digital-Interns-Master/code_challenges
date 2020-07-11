@@ -46,7 +46,7 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 def temperature_status(temperature, functional, desired_temp)
   if functional == true && (temperature > desired_temp) 
     print "Turn on the A/C, please"
-  elsif functional && (temperature > desired_temp)
+  elsif functional == false && (temperature > desired_temp)
     print "Fix the A/C now! It's hot!"
   elsif functional == false && (temperature < desired_temp)
     print "Fix the A/C whenever you have the chance. It's cool."
