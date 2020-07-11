@@ -8,14 +8,28 @@ Chartreuse is my favorite color. Magenta is my second favorite. Periwinkle is my
 ```ruby
 color = "Magenta"
 
-# write your code here
+if color == "Chartreuse"
+  puts "That's my favorite color"
+elsif color == "Magenta"
+  puts "That's my second favorite color"
+elsif color == "Periwinkle"
+  puts "This is my third favorite color"
+else
+  "Yuck! I hate this color."
+end
 ```
 
 Now, turn your color conditional into a method called `color_checker` that takes any color as an argument.
 
 ```ruby
 def color_checker(color)
-  # write your code here
+  if color == "Chartreuse"
+    return "That's my favorite color"
+  elsif color == "Magenta"
+    return "That's my second favorite color"
+  else
+  "Yuck! I hate this color."
+  end
 end
 ```
 
@@ -27,7 +41,16 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
   - If the air conditioner is non-functional and the current temperature is below the the desired temperature, print the string "Fix the A/C whenever you have the chance. It's cool."
 
 ```ruby
-# write your code here
+air_con_func = true
+def temperature_status(air_con_func, current_temp, desired_temp)
+  if air_con_func and current_temp > desired_temp
+    return "Turn on the A/C, please."
+  elsif !air_con_func and current_temp > desired_temp
+    return "Fix the A/C now!  It's hot!"
+  elsif !air_con_func and current_temp < desired_temp
+    return "Fix the A/C whenever you have the chance. It's cool."
+  end
+end
 ```
 
 ## Palindrome Checker
@@ -35,5 +58,12 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 Create a Ruby method that takes a word or phrase and checks whether or not it's a palindrome (reads the same backward as forward).
 
 ```ruby
-# write your code here
+def palindrome(word)
+  if word == word.reverse()
+    return "Yay! You found a palindrome"
+  else
+    return "Aww. try another word."
+  end
+end
+puts palindrome("level")
 ```
