@@ -27,6 +27,8 @@ def color_checker(color)
     return "That's my favorite color"
   elsif color == "Magenta"
     return "That's my second favorite color"
+  elsif color == "Periwinkle"
+    return "This is my third favorite color"
   else
   "Yuck! I hate this color."
   end
