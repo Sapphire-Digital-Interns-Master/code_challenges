@@ -24,16 +24,16 @@ Now, turn your color conditional into a method called `color_checker` that takes
 
 ```ruby
 def color_checker(color)
-case color
-when "Chartreuse"
-  puts "That's my favorite color"
-when "Magenta"
-  puts "That's my second favorite color"
-when "Periwinkle"
-  puts "This is my third favorite color"
-else
-  puts "Yuck! I hate this color."
-end
+  case color
+  when "Chartreuse"
+    puts "That's my favorite color"
+  when "Magenta"
+    puts "That's my second favorite color"
+  when "Periwinkle"
+    puts "This is my third favorite color"
+  else
+    puts "Yuck! I hate this color."
+  end
 end
 ```
 
