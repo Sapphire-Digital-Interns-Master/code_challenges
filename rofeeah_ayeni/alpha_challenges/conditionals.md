@@ -6,16 +6,17 @@ Chartreuse is my favorite color. Magenta is my second favorite. Periwinkle is my
 * In Ruby, write a conditional that will check a variable set to a color and tell me how I feel about it.
 
 ```ruby
-color = "Magenta"
+color = ""
 
-if color == "Chartreuse"
+case color
+when "Chartreuse"
   puts "That's my favorite color"
-elsif color == "Magenta"
+when "Magenta"
   puts "That's my second favorite color"
-elsif color == "Periwinkle"
+when "Periwinkle"
   puts "This is my third favorite color"
 else
-  "Yuck! I hate this color."
+  puts "Yuck! I hate this color."
 end
 ```
 
@@ -23,15 +24,16 @@ Now, turn your color conditional into a method called `color_checker` that takes
 
 ```ruby
 def color_checker(color)
-  if color == "Chartreuse"
-    return "That's my favorite color"
-  elsif color == "Magenta"
-    return "That's my second favorite color"
-  elsif color == "Periwinkle"
-    return "This is my third favorite color"
-  else
-  "Yuck! I hate this color."
-  end
+case color
+when "Chartreuse"
+  puts "That's my favorite color"
+when "Magenta"
+  puts "That's my second favorite color"
+when "Periwinkle"
+  puts "This is my third favorite color"
+else
+  puts "Yuck! I hate this color."
+end
 end
 ```
 
@@ -46,11 +48,11 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 air_con_func = true
 def temperature_status(air_con_func, current_temp, desired_temp)
   if air_con_func and current_temp > desired_temp
-    return "Turn on the A/C, please."
-  elsif !air_con_func and current_temp > desired_temp
-    return "Fix the A/C now!  It's hot!"
-  elsif !air_con_func and current_temp < desired_temp
-    return "Fix the A/C whenever you have the chance. It's cool."
+    puts "Turn on the A/C, please."
+  elsif current_temp > desired_temp
+    puts "Fix the A/C now!  It's hot!"
+  elsif current_temp < desired_temp
+    puts "Fix the A/C whenever you have the chance. It's cool."
   end
 end
 ```
@@ -61,10 +63,10 @@ Create a Ruby method that takes a word or phrase and checks whether or not it's 
 
 ```ruby
 def palindrome(word)
-  if word == word.reverse()
-    return "Yay! You found a palindrome"
+  if word == word.reverse
+    puts "Yay! You found a palindrome"
   else
-    return "Aww. try another word."
+    puts "Aww. try another word."
   end
 end
 puts palindrome("level")
