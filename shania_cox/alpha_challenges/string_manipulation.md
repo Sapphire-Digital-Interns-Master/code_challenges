@@ -27,13 +27,14 @@ print words
 
 ```ruby
 count = 0
-words = iverson_rant.split
-while i < words.length
-  if words[i] == 'practice,' || words[i] == 'practice.'
+iverson_rant.split.map {|word| 
+  case word
+  when "practice,"
     count += 1
+  when "practice."
+    count +=1
   end
-  i += 1
-end
+}
 print count
 ```
 
