@@ -25,8 +25,7 @@ puts iverson_rant.split.map(&:chr).join
 2. Programmatically find out exactly how many times Iverson used the word 'practice' in his rant.
 
 ```ruby
-puts iverson_rant.split("practice").count
-#not sure about this 
+puts iverson_rant.scan("practice").count
 ```
 
 ## Green Eggs and Ham
