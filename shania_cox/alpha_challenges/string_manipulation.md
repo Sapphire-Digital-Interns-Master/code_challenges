@@ -26,16 +26,7 @@ print words
 2. Programmatically find out exactly how many times Iverson used the word 'practice' in his rant.
 
 ```ruby
-count = 0
-iverson_rant.split.map {|word| 
-  case word
-  when "practice,"
-    count += 1
-  when "practice."
-    count +=1
-  end
-}
-print count
+puts iverson_rant.scan("practice").count
 ```
 
 ## Green Eggs and Ham
