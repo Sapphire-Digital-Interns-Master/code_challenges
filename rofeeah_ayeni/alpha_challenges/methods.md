@@ -1,7 +1,7 @@
 # Method Man's Method Madness
 
 ```ruby
-wu_tang = [
+$wu_tang = [
   {
     :title => "Enter the Wu Tang",
     :release_date => "11-09-93",
