@@ -4,6 +4,7 @@ Code challenges for the Sapphire-Digital engineering interns.
 
 ## Getting Started
 
+lalalalallal
 * From a terminal window, clone this repository. Pay attention to where you've cloned it - this is where your files will live!
 * CD into the `code_challenges` repository.
 * Make a new branch with your name (e.g. `git checkout -b rofeeah_ayeni`).
