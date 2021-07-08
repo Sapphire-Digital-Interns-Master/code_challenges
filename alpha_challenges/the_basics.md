@@ -37,8 +37,9 @@ weather = "cloudy"
 weather == "cloudy"
 ```
 
-**Answer 3:**
 What is the difference between these two statements? Explain your answer.
+
+**Answer 3:**
 The first line sets the variable weather to cloudy while the second line tests whether or not weather is equal to cloudy. In this case it would show true since the variable weather is equal to cloudy.
 
 ## Question 4
