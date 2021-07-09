@@ -115,7 +115,8 @@ puts jurassic_park['Triceratops']
 
 **Answer 8B:**
 ```ruby
-puts jurassic_park['Humans'].push('Dr.Satler')
+jurassic_park['Humans'].push('Dr.Satler')
+puts jurassic_park['Humans']
 ```
 
 ## Question 9
@@ -149,9 +150,8 @@ This is because it prints out x with the puts command and then proceeds to print
 **Answer 11:**
 ```ruby
 def names
-  puts ["Jackie", "Hami"]
+  'Jackie', 'Hami'
 end
-return names
 ```
 
 ## Question 12
@@ -160,7 +160,7 @@ return names
 
 **Answer 12:**
 ```ruby
-def caps(string)
-  puts string.upcase
+def caps(hello)
+  hello.upcase
 end
 ```
