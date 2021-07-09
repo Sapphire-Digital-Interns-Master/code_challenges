@@ -154,7 +154,7 @@ end
 
 **Answer 12:**
 ```ruby
-def caps(string)
-  string.upcase
+def caps(string_input)
+  string_input.upcase
 end
 ```
