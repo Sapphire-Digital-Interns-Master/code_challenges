@@ -134,8 +134,8 @@ end
 * Examine the above code and imagine that you run it.
 * What do you expect the outcome will be? Explain your answer.
 
-**Asnwer 9:**
-The code would print index 0, 1, 2, and 3, respectively, of the turtles array.
+**Answer 9:**
+The code would print the values at index 0, 1, 2, and 3, respectively, of the turtles array.
 
 ## Question 11
 
