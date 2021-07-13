@@ -44,11 +44,11 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 
 ```ruby
 def temperature_status(curr_temp, is_functional, desired_temp)
-  if (is_functional == true) && (curr_temp > desired_temp)
+  if is_functional && (curr_temp > desired_temp)
     puts "Turn on the A/C, please."
-  elsif (is_functional == false) && (curr_temp > desired_temp)
+  elsif !is_functional && (curr_temp > desired_temp)
     puts "Fix the A/C now!  It's hot!"
-  elsif (is_functional == false) && (curr_temp < desired_temp)
+  elsif !is_functional && (curr_temp < desired_temp)
     puts "Fix the A/C whenever you have the chance. It's cool."
   end
 end
