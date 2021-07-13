@@ -44,19 +44,9 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 
 ```ruby
 def temperature_status(current_temp, AC_functional, desired_temp)
-  if AC_functional and current_temp >= desired_temp
-    'Turn on the A/C, please.'
-  elsif current_temp >= desired_temp
-    'Fix the A/C now! It is hot!'
-  else current_temp <= desired_temp
-    'Fix the A/C whenever you have the chance. It is cool.'
-  end
-end
-#I tried using unless in code below but I'm unsure if it works. Would this work?
-def temperature_status(current_temp, AC_functional, desired_temp)
-  print 'Turn on the A/C, please.' if AC_functional and current_temp >= desired_temp
-  print 'Fix the A/C now! It is hot!' if current_temp >= desired_temp and unless AC_functional
-  print 'Fix the A/C whenever you have the chance. It is cool.' if current_temp <= desired_temp and unless AC_functional
+  print 'Turn on the A/C, please.' if AC_functional && current_temp > desired_temp
+  print 'Fix the A/C now! It is hot!' if current_temp > desired_temp && !AC_functional
+  print 'Fix the A/C whenever you have the chance. It is cool.' if current_temp < desired_temp && !AC_functional
   end
 end
 ```
