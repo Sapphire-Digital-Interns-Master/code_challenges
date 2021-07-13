@@ -8,14 +8,30 @@ Chartreuse is my favorite color. Magenta is my second favorite. Periwinkle is my
 ```ruby
 color = "Magenta"
 
-# write your code here
+if color == "Chartreuse"
+  puts "This is your favorite color"
+elsif color == "Magenta"
+  puts "This is your second favorite color"
+elsif color == "Periwinkle"
+  puts "This is your third favorite color"
+else
+  puts "You hate this color"
+end
 ```
 
 Now, turn your color conditional into a method called `color_checker` that takes any color as an argument.
 
 ```ruby
 def color_checker(color)
-  # write your code here
+  if color == "Chartreuse"
+    puts "This is your favorite color"
+  elsif color == "Magenta"
+    puts "This is your second favorite color"
+  elsif color == "Periwinkle"
+    puts "This is your third favorite color"
+  else
+    puts "You hate this color"
+  end
 end
 ```
 
@@ -27,7 +43,15 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
   - If the air conditioner is non-functional and the current temperature is below the the desired temperature, print the string "Fix the A/C whenever you have the chance. It's cool."
 
 ```ruby
-# write your code here
+def temperature_status(curr_temp, is_functional, desired_temp)
+  if (is_functional == true) && (curr_temp > desired_temp)
+    puts "Turn on the A/C, please."
+  elsif (is_functional == false) && (curr_temp > desired_temp)
+    puts "Fix the A/C now!  It's hot!"
+  elsif (is_functional == false) && (curr_temp < desired_temp)
+    puts "Fix the A/C whenever you have the chance. It's cool."
+  end
+end
 ```
 
 ## Palindrome Checker
@@ -35,5 +59,11 @@ Create a Ruby method called `temperature_status` that takes three arguments: the
 Create a Ruby method that takes a word or phrase and checks whether or not it's a palindrome (reads the same backward as forward).
 
 ```ruby
-# write your code here
+def is_palindrome(string_input)
+  if string_input == string_input.reverse
+    puts "This is a palindrome!"
+  else
+    puts "This is not a palindrome."
+  end
+end
 ```
