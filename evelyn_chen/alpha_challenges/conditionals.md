@@ -47,7 +47,6 @@ def temperature_status(current_temp, AC_functional, desired_temp)
   print 'Turn on the A/C, please.' if AC_functional && current_temp > desired_temp
   print 'Fix the A/C now! It is hot!' if current_temp > desired_temp && !AC_functional
   print 'Fix the A/C whenever you have the chance. It is cool.' if current_temp < desired_temp && !AC_functional
-  end
 end
 ```
 
