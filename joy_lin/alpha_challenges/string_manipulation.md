@@ -19,13 +19,18 @@ iverson_rant = "If I can't practice, I can't practice, man. If I'm hurt, I'm hur
 Programmatically manipulate `iverson_rant` to reflect the output above.
 
 ```ruby
-# write your code here
+rant_words = iverson_rant.split(" ")
+first_letter = rant_words.map do |word|
+  word[0]
+end
+
+puts first_letter.join("")
 ```
 
 2. Programmatically find out exactly how many times Iverson used the word 'practice' in his rant.
 
 ```ruby
-# write your code here
+puts iverson_rant.scan('practice').count
 ```
 
 ## Green Eggs and Ham
@@ -44,5 +49,5 @@ Programmatically do the following to the `sam_i_am` variable:
 Hint: You can chain substitutions!
 
 ```ruby
-# write your code here
+puts sam_i_am.gsub!(" ", "_").gsub!("\n", "*").gsub!("Sam", "Joy").gsub!("o", "0").gsub!("green", "blue")
 ```
