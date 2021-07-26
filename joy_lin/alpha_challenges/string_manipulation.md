@@ -21,9 +21,8 @@ Programmatically manipulate `iverson_rant` to reflect the output above.
 ```ruby
 rant_words = iverson_rant.split(" ")
 first_letter = rant_words.map do |word|
-  word[0]
+  word.chr
 end
-
 puts first_letter.join("")
 ```
 
